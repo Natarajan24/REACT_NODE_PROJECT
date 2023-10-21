@@ -8,7 +8,7 @@ const HomePage = ({ onLogin }) => {
         setTimeout(() => {
             localStorage.removeItem("auth");
             onLogin();
-        }, 5 * 60 * 1000)
+        },300000)
     })
 
     return (<>
