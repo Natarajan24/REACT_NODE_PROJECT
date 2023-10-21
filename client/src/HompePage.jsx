@@ -7,9 +7,8 @@ const HomePage = ({ onLogin }) => {
     useEffect(() => {
         setTimeout(() => {
             localStorage.removeItem("auth");
-            alert("After 5 minutes automatically logout to move login screen")
             onLogin();
-        }, 5000)
+        }, 5 * 60 * 1000)
     })
 
     return (<>
